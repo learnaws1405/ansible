@@ -1,0 +1,17 @@
+- name: PLAY01
+  hosts: frontend
+  tasks:
+  - name: PLAY01 and TASK01
+    ansile.builtin.debug:
+      msg: "dispaying PLAY01 and TASK01"
+  - name: PLAY01 and TASK01
+    ansile.builtin.debug:
+      msg: "dispaying PLAY01 and TASK02"
+
+  tasks:
+  - name: PLAY02 and TASK02
+    ansile.builtin.debug:
+      msg: "dispaying PLAY02 and TASK01"
+  - name: PLAY02 and TASK02
+    ansile.builtin.debug:
+      msg: "dispaying PLAY02 and TASK02"
