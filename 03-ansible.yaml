@@ -7,7 +7,8 @@
   - name: PLAY01 and TASK01
     ansible.builtin.debug:
       msg: "dispaying PLAY01 and TASK02"
-
+- name: PLAY02
+  hosts: frontend
   tasks:
   - name: PLAY02 and TASK02
     ansible.builtin.debug:
