@@ -35,4 +35,4 @@
 
   - name : convert yaml to jason
     ansible.builtin.debug:
-      msg: " jason: {{students_yaml | to_jason }}"
+      msg: " jason: {{students_yaml | to_json }}"
