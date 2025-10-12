@@ -1,5 +1,5 @@
 - name: funtions
-  host: local
+  hosts: local
   connection: local
   vars:
     technologies: Devops, linix, AWS
