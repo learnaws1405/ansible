@@ -1,0 +1,9 @@
+- name: vairables declaration
+  host: local
+  conncetion: local
+  vars_files:
+    - course.yaml
+  task:
+    - name: printing from variable vars_files
+      ansible.buitin.debug:
+        msg: " {{ COURSE }} and its {{ DURATION }} by {{ TRAINER }}"

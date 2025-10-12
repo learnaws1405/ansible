@@ -1,0 +1,14 @@
+- name: play level variables
+  host: local
+  conncetion: local
+  vars:
+    COURSE: ansible
+    DURATION: 10hours
+    TRAINER: Siva
+  tasks:
+  - name: priting varibale name
+    vars:
+      COURSE: ANSIBLE
+    ansible.buitin.debug:
+    msg: "{{ COURSE }} will complete in {{ DURATION }} by {{ TRAINER }} "
+
