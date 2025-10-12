@@ -16,5 +16,5 @@
       msg: "changing strings to list{{ technologies| split(',') }}"
   
   - name: covnvert map means dictionary to list
-    ansible.builtin.dedug:
+    ansible.builtin.debug:
       msg: "converting maps to list {{ dic | dict2items }}"
