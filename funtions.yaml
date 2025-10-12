@@ -17,4 +17,4 @@
   
   - name: covnvert map means dictionary to list
     ansible.builtin.dedug:
-      msg: "converting maps to list {{ dic | dic2items }}"
+      msg: "converting maps to list {{ dic | dict2items }}"
