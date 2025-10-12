@@ -6,6 +6,12 @@
     dic:
       application: payement
       region: dev
+    list:
+      - key: application
+        value: payement
+      - key: environment
+        valuse: dev
+
   tasks:
   - name: default variable
     ansible.builtin.debug:
@@ -18,3 +24,15 @@
   - name: covnvert map means dictionary to list
     ansible.builtin.debug:
       msg: "converting maps to list {{ dic | dict2items }}"
+    
+  - name: converting list to dictionary ie map
+    ansible.builtin.debug:
+      msg: "converting list to maps {{list | items2dict }}"
+
+  - name : read yaml and assign it to varaible
+    ansible.builtin.set_fact:
+      student_yaml: "{{ lookup('file','student.yaml') from yaml }}"
+
+  - name : convert yaml to jason
+    ansible.builtin.debug:
+      msg: "jason is {{student_yaml | to_jason }}"
