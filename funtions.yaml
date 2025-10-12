@@ -10,7 +10,7 @@
       - key: application
         value: payement
       - key: environment
-        valuse: dev
+        value: dev
 
   tasks:
   - name: default variable
