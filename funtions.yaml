@@ -31,7 +31,7 @@
 
   - name : read yaml and assign it to varaible
     ansible.builtin.set_fact:
-      student_yaml: "{{ lookup('file','student.yaml') from yaml }}"
+      student_yaml: "{{ lookup('file', 'student.yaml' ) from_yaml }}"
 
   - name : convert yaml to jason
     ansible.builtin.debug:
